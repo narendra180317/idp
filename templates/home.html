@@ -1,0 +1,20 @@
+
+{% extends 'base.html' %}
+{% load static%}
+{%block content%}
+<section class="image-section">
+    <!--<img src="{% static 'images/UI_image.webp' %}" alt="My Image">-->
+    <div class="image-text">
+        <h5>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Harum</h5>
+        <h1>New Summer <br> Collection 2023</h1>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quod culpa
+            saepe eaque consequatur consectetur ullam quo excepturi sunt! Illo
+            saepe impedit similique aliquam sint possimus architecto, accusamus
+            alias, aut ipsa provident quos asperiores ullam! Eveniet debitis
+            illum laboriosam necessitatibus expedita?</p><br><br><br><br><br>
+        <a id='start' href="{% url 'main' %}">Get Started?</a>
+    </div>
+
+</section>
+
+{% endblock content%}

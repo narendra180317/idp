@@ -1,0 +1,212 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    font-family: 'Jost', sans-serif;
+    list-style: none;
+    text-decoration: none;
+}
+
+header {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    right: 0;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 10%;
+    background-color:red;
+    
+}
+
+.logo img {
+    max-width: 120px;
+    height: auto;
+}
+
+.navmenu {
+    display: flex;
+
+    
+}
+
+.navmenu a {
+    color: #333;
+    font-size: 24px;
+    text-transform: capitalize;
+    padding: 10px 20px;
+    font-weight: 400;
+    transition: all .42s ease-in-out;
+}
+
+.navmenu a:hover {
+    color: #fff;
+    background-color: #526569df;
+    border-radius: 10px;
+    margin: 10px;
+    padding: 5px;
+}
+.nav-icon img{
+    width: 30px;
+    height: 30px;
+    margin: 10px;
+    padding: auto;
+    cursor: pointer;
+}
+
+.nav-icon {
+    display: flex;
+    align-items: center;
+}
+
+.nav-icon img:hover {
+    transform: scale(1.1);
+    color: #4371d4;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #a7d0db81;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    padding: 10px 16px;
+    border-radius: 5px;
+    z-index: 1;
+}
+
+/* Style for the dropdown option links */
+.dropdown-content a {
+    color: #3b3232;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+}
+
+
+/* Style for the hover effect on the dropdown option links */
+.dropdown-content a:hover {
+    background-color:#61c2e0
+}
+
+/* Show the dropdown options when the dropdown button is hovered over */
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.cart{
+    margin: 5px;
+    padding: 10px;
+    cursor: pointer;
+}
+
+
+.image-section {
+    position: relative;
+    width: 100%;
+    height: 100%; /* Adjust the height as needed */
+  }
+  
+  .image-section img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Maintain the aspect ratio and cover the section */
+    filter: brightness(0.2);
+  }
+  
+  .image-text {
+    height: 250px;
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: white;
+  }
+  
+  .image-text h5 {
+    font-size: 24px;
+  }
+  .image-text h1 {
+      font-size: 20;
+  }
+  
+  .image-text p {
+    font-size: 16px;
+  }
+  .image-text #start{
+      color: pink;
+      font-weight: bold;
+  }
+  header.sticky {
+      background: #a7d0db;
+      padding: 20px 10%;
+      box-shadow: 0px 0px 10px rgb(0 0 0 / 10%);
+  }
+  
+
+
+/* Responsive-css */
+@media(max-width:890px) {
+    header {
+        padding: 20px 3%;
+        transition: .4s;
+    }
+}
+
+@media(max-width:630px) {
+    .main-text{
+        font-size:50px;
+        transition: .4s;
+    }
+    .main-text h1 {
+        font-size: 50px;
+        transition: .4s;
+    }
+
+    .main-text p {
+        font-size: 18px;
+        transition: .4s;
+    }
+
+    .main-btn {
+        padding: 10px 20px;
+        transition: .4s;
+    }
+}
+
+@media(max-width:750px) {
+    .navmenu {
+        position: absolute;
+        top: 100%;
+        right: -100%;
+        width: 300px;
+        height: 130vh;
+        background: #edfff1;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 120px 30px;
+        transition: all .42s;
+    }
+
+    .navmenu a {
+        display: block;
+        margin: 18px 0;
+    }
+
+    .navmenu.open {
+        right: 0;
+    }
+}

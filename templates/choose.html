@@ -1,0 +1,53 @@
+{% load static%}
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Intelligent Diet Planner</title>
+        <!-- CSS-link -->
+        <link rel="stylesheet" href="/static/css/choose.css">
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    </head>
+    <body>
+        <h2 id = "heading">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Velit tenetur pariatur il Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus, ipsam.</h2>
+        <div class="container">
+            <form id= "formValue"method="" action="">
+                <ul>
+                    <li class="list-1">
+                        <img src="image/nonveg.png" class="logo">
+
+                        <p>Non vegetarian</p>
+                    </li>
+                    <li class="list-2">
+                        <img src="image/veg.png" class="logo">
+
+                        <p>vegetarian</p>
+                    </li>
+                </ul>
+                <input type="number" step="1" name="quantity"
+                    placeholder="Enter calory" required>
+                <select placeholder="select meal quantity">
+                    <option value="option1">Option 1</option>
+                    <option value="option2">Option 2</option>
+                    <option value="option3">Option 3</option>
+                    <option value="option1">Option 1</option>
+                    <option value="option2">Option 2</option>
+                    <option value="option3">Option 3</option>
+                </select>
+                <input type="submit" class = "custom-button" value="Calculate">
+
+                <a href="bmi.html">calculate calories here </a>
+            </form>
+            <div id="result">
+            </div>
+
+        </div>
+
+        <script src="{% static 'js/main1.js' %}"></script>
+    </body>
+</html>
