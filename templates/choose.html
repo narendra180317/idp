@@ -1,4 +1,4 @@
-{% load static%}
+{%load static%}
 <!DOCTYPE html>
 <html>
     <head>
@@ -32,19 +32,21 @@
                 </ul>
                 <input type="number" step="1" name="quantity"
                     placeholder="Enter calory" required>
-                <select placeholder="select meal quantity">
-                    <option value="option1">Option 1</option>
-                    <option value="option2">Option 2</option>
-                    <option value="option3">Option 3</option>
-                    <option value="option1">Option 1</option>
-                    <option value="option2">Option 2</option>
-                    <option value="option3">Option 3</option>
-                </select>
-                <input type="submit" class = "custom-button" value="Calculate">
+                    <select name="quantity" placeholder="select meal quantity">
+                        <option value="1">1 Meal</option>
+                        <option value="2">2 Meals</option>
+                        <option value="3">3 Meals</option>
+                        <option value="4">4 Meals</option>
+                        <option value="5">5 Meals</option>
+                        <option value="6">6 Meals</option>
+                      </select>
+                      
+                <input type="submit" class = "custom-button" value="Generate">
 
                 <a href="{% url 'bmi' %}">calculate calories here </a>
             </form>
             <div id="result">
+                
             </div>
 
         </div>
