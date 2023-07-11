@@ -9,3 +9,6 @@ def home(request):
 
 def main(request):
     return render(request,'choose.html')
+
+def bmi(request):
+    return render(request,'bmi.html')

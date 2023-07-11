@@ -24,4 +24,5 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('',view.home),
     path('main/',view.main,name='main'),
+     path('bmi/',view.bmi,name='bmi'),
 ]
