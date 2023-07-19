@@ -22,7 +22,11 @@ from django.conf.urls.static import static
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('',view.home),
-    path('main/',view.main,name='main'),
-     path('bmi/',view.bmi,name='bmi'),
+    path('', view.home),
+    path('main/', view.main, name='main'),
+    path('bmi/', view.bmi, name='bmi'),
+    path('recommendation/', view.generate_recommendation, name='recommendation'),
 ]
+
+if settings.DEBUG:
+    urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)

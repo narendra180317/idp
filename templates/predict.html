@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Meal Recommendations</title>
+</head>
+<body>
+    <h1>Recommended Meal Plan</h1>
+    <p>Total calories: {{ total_calories }}</p>
+    <p>Calorie difference: {{ calorie_difference }}</p>
+
+    {% if meal_recommendations %}
+        {% for meal_type, foods in meal_recommendations.items %}
+            <h2>{{ meal_type|title }} meal:</h2>
+            {% if foods %}
+            {{foods}}
+                <ul>
+                    {% for food in foods %}
+                        <li>
+                            <h3>{{ suggested_meals.foodName }}</h3>
+                            <p>Calories: {{ suggested_meals.Calories_Kcal }}</p>
+                            <p>Carbohydrates: {{ suggested_meals.carbohydrate_g }}g</p>
+                            <p>Protein: {{ food.protein_g }}g</p>
+                            <p>Fat: {{ food.fat_g }}g</p>
+                            <p>Fiber: {{ food.fiber_g }}g</p>
+                            <img src="{{ food.image.url }}" alt="{{ food.foodName }}" width="100" height="100">
+                        </li>
+                    {% endfor %}
+                </ul>
+            {% else %}
+                <p>No food items found for {{ meal_type }} meal.</p>
+            {% endif %}
+        {% endfor %}
+    {% else %}
+        <p>No meal recommendations available.</p>
+    {% endif %}
+</body>
+</html>
