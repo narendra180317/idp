@@ -1,24 +1,32 @@
 {%load static%}
+
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Intelligent Diet Planner</title>
-        <!-- CSS-link -->
-        <link rel="stylesheet" href="/static/css/choose.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Intelligent Diet Planner</title>
+    <!-- CSS-link -->
+    <link rel="stylesheet" href="/static/css/choose.css" />
 
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-
-    </head>
-    <body>
-        
-        <h2 id = "heading">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Velit tenetur pariatur il Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus, ipsam.</h2>
-        <div class="container">
-            <form id= "formValue"method="" action="">
-                <ul>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  </head>
+  <body>
+    <h2 id="heading">
+      "Transform your body and mind with tailored calorie support,<br />
+      propelling you towards greatness and lifelong vitality."
+    </h2>
+    <div class="container">
+      <form
+        id="formValue"
+        name="formValue"
+        method="POST"
+        action="{% url 'recommendation'%}"
+      >
+        {% csrf_token %}
+        <!---- <ul>
                     <li class="list-1">
                         <img src="image/nonveg.png" class="logo">
 
@@ -29,28 +37,86 @@
 
                         <p>vegetarian</p>
                     </li>
-                </ul>
-                <input type="number" step="1" name="quantity"
-                    placeholder="Enter calory" required>
-                    <select name="quantity" placeholder="select meal quantity">
-                        <option value="1">1 Meal</option>
-                        <option value="2">2 Meals</option>
-                        <option value="3">3 Meals</option>
-                        <option value="4">4 Meals</option>
-                        <option value="5">5 Meals</option>
-                        <option value="6">6 Meals</option>
-                      </select>
-                      
-                <input type="submit" class = "custom-button" value="Generate">
+                </ul>-->
+        <input
+          type="number"
+          step="1"
+          name="calorie_intake"
+          placeholder="Enter calory"
+          required
+        />
+        <select
+          id="meal_frequency_id"
+          name="meal_frequency"
+          placeholder="select meal quantity"
+        >
+          <option value="1">1 Meal</option>
+          <option value="2">2 Meals</option>
+          <option value="3">3 Meals</option>
+          <option value="4">4 Meals</option>
+          <option value="5">5 Meals</option>
+          <option value="6">6 Meals</option>
+        </select>
 
-                <a href="{% url 'bmi' %}">calculate calories here </a>
-            </form>
-            <div id="result">
-                
-            </div>
+        <input type="submit" class="custom-button" value="Generate" />
 
-        </div>
+        <a href="{% url 'bmi' %}">calculate calories here </a>
+      </form>
+      <div id="result"></div>
+      <input type="hidden" id="santosh" value="{{suggested_meals}}" />
+    </div>
 
-        <script src="{% static 'js/main1.js' %}"></script>
-    </body>
+    <!--<script src="{% static 'js/main1.js' %}"></script>-->
+    <!---- <script>
+        const form = document.getElementById("formValue");
+        
+        form.addEventListener("submit", function (event) {
+          event.preventDefault();
+        
+          const calorieInput = document.querySelector(
+            'input[name="calorie_intake"]'
+          );
+          const calorieCount = calorieInput.value;
+        
+          const mealQuantitySelect = document.querySelector("#meal_frequency_id");
+          const mealQuantity = parseInt(mealQuantitySelect.value);
+        
+          const data = {
+            calorie_intake: calorieCount,
+            meal_frequency: mealQuantity,
+          };
+        
+          fetch("{% url 'recommendation' %}", {  // Update the AJAX request URL
+            method: "POST",
+            headers: {
+              "Content-Type": "application/json",
+              "X-CSRFToken": "{{ csrf_token }}",
+            },
+            body: JSON.stringify(data),
+          })
+            .then((response) => response.json())
+            .then((data) => {
+              const resultDiv = document.getElementById("result");
+              resultDiv.innerHTML = "";
+        
+              const suggestedMeals = data.suggested_meals;
+              const title = document.createElement("h3");
+              title.textContent = `Today's Meal Plan: (${calorieCount} Kcal)`;
+              resultDiv.appendChild(title);
+              title.style.marginBottom = "15px";
+        
+              suggestedMeals.forEach((meal) => {
+                const div = document.createElement("div");
+                const mealTitle = document.createElement("h2");
+                mealTitle.textContent = meal.FoodName;
+                div.appendChild(mealTitle);
+                resultDiv.appendChild(div);
+              });
+            })
+            .catch((error) => {
+              console.error("Error:", error);
+            });
+        });
+        </script>-->
+  </body>
 </html>

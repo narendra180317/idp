@@ -19,7 +19,8 @@ header {
     align-items: center;
     justify-content: space-between;
     padding: 20px 10%;
-    background-color:red;
+    background-color:#c6ade2
+    
     
 }
 
@@ -110,6 +111,49 @@ header {
     padding: 10px;
     cursor: pointer;
 }
+.image-section {
+    position: relative;
+    width: 100%;
+    height: 100%; /* Adjust the height as needed */
+  }
+  
+  .image-section img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Maintain the aspect ratio and cover the section */
+    filter: brightness(0.2);
+  }
+  
+  .image-text {
+    height: 250px;
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: white;
+  }
+  
+  .image-text h5 {
+    font-size: 24px;
+  }
+  .image-text h1 {
+      font-size: 20;
+  }
+  
+  .image-text p {
+    font-size: 16px;
+  }
+  .image-text #start{
+      color: pink;
+      font-weight: bold;
+  }
+  header.sticky {
+      background: #a7d0db;
+      padding: 20px 10%;
+      box-shadow: 0px 0px 10px rgb(0 0 0 / 10%);
+  }
+  
   header.sticky {
       background: #a7d0db;
       padding: 20px 10%;
@@ -126,48 +170,40 @@ header {
     }
 }
 
-@media(max-width:630px) {
-    .main-text{
-        font-size:50px;
-        transition: .4s;
-    }
-    .main-text h1 {
-        font-size: 50px;
-        transition: .4s;
-    }
 
-    .main-text p {
-        font-size: 18px;
-        transition: .4s;
+@media screen and (max-width: 768px) {
+    header {
+      padding: 20px 5%;
     }
-
-    .main-btn {
-        padding: 10px 20px;
-        transition: .4s;
+  
+    .logo img {
+      max-width: 80px;
     }
-}
-
-@media(max-width:750px) {
-    .navmenu {
-        position: absolute;
-        top: 100%;
-        right: -100%;
-        width: 300px;
-        height: 130vh;
-        background: #edfff1;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        padding: 120px 30px;
-        transition: all .42s;
-    }
-
+  
     .navmenu a {
-        display: block;
-        margin: 18px 0;
+      font-size: 18px;
+      padding: 8px 16px;
     }
-
-    .navmenu.open {
-        right: 0;
+  
+    .nav-icon img {
+      width: 24px;
+      height: 24px;
+      margin: 8px;
     }
-}
+  
+    .image-text {
+      top: 40%;
+    }
+  
+    .image-text h5 {
+      font-size: 20px;
+    }
+  
+    .image-text h1 {
+      font-size: 18px;
+    }
+  
+    .image-text p {
+      font-size: 14px;
+    }
+  }

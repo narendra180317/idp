@@ -1,0 +1,308 @@
+FoodName,Calories_Kcal,Carbohydrate(g),Protein(g),Fat(g),Fiber(g),FoodType
+daal,134,24.8,6.4,1,2.53,lunch
+1 whole egg,79,0.4,6.9,5.2,0,snack
+White Rice ,331,76,7,0.2,2,lunch
+Basmati Rice,359,76.7,9.2,1,0.5,lunch
+chana daal,380,60,22,6,18,lunch
+moong dal,480,88,32,2,23.94,lunch
+masoor dal,129,14.3,7.1,0,4.3,lunch
+1 egg(boiled),85,0.7,6.9,5.8,0,snack
+1 egg(fried),107,0.7,7.5,8.2,0,snack
+cauliflower(mash),95,12.7,2.1,4.7,1.6,lunch
+cauliflower(with potato),133,11.3,2.1,9.2,1.41,lunch
+cauliflower(boiled),23,4.1,1.8,0.5,2.3,lunch
+apple,58,13.6,0.4,0.2,2.8,breakfast
+banana,89,22.8,1.1,0.3,2.6,breakfast
+mango,60,15,0.8,0.4,1.6,breakfast
+papaya,39,9.8,0.6,0.1,1.8,breakfast
+avocado,190,1.9,2,19.5,3.4,breakfast
+grape,69,18.1,0.7,0.2,0.9,breakfast
+jackfruit,94,24,1.5,0.3,1.6,breakfast
+watermelon,30,7.5,0.6,0.1,0.4,breakfast
+peach,39,9.5,0.9,0.3,1.5,breakfast
+pear,57,15.2,0.4,0.1,0.4,breakfast
+lemon,50,7.6,0.9,0.7,4.9,breakfast
+kiwi,61,14.9,1.4,0.7,2.7,breakfast
+pomegrante,74,17,1,0.3,10,breakfast
+guava,68,14.3,2.5,0.9,5.4,breakfast
+barberry(Chutro),320,63.5,3.4,3.6,9.9,breakfast
+orange,46,11.5,0.7,0.2,2.4,breakfast
+black plum(Jaamun),45,12.1,0,0,1.52,breakfast
+date,300,75,2.5,0,62.5,breakfast
+lichi,66,17,0.8,0.4,1.3,breakfast
+maushambi(Sweet Lemon),31,8.4,0,0.1,0,breakfast
+muntalla(Kumquat),71,15.9,1.9,0.9,6.5,breakfast
+dhido,237,44,8.4,3.4,3,lunch
+gundruk,322,38,39,2,0,lunch
+kodo ko dhido,383,84.2,7.8,1.3,0,lunch
+fapar ko dhido,92,19.9,3.4,0.6,2.7,lunch
+soybeans,446,30,36,20,9,lunch
+sattu(corn),361,76.8,6.9,3.9,7.3,breakfast
+sattu(chana),429,65.5,21.4,7.1,9,breakfast
+semolina(suji),351,72.1,10.1,1.3,2.8,snack
+khichadi,365,68.9,13.3,3.3,8.9,lunch
+chana,345,66,19,6,12,snack
+chana(curry),183,21.8,9.6,7.5,0,lunch
+chana(dried),320,49.6,21.3,5.4,0,snack
+pea(curry),92,13,2.9,3.8,0,lunch
+pea(green),81,14.4,5.4,0.4,5.1,snack
+beans,341,63.6,20.4,1.1,15.9,lunch
+bakula,341,63.4,19.5,1.2,14.6,lunch
+bakula(dried),245,32.5,26.1,2.1,0,lunch
+bakula(fried),300,6.7,13.3,23.3,13.33,snack
+bodi,96,13.8,7.5,0.8,3.23,lunch
+lauka(raw),13,2.7,0.4,0.1,0,snack
+lauka(curry),28,4.6,0.8,1.2,1.36,lunch
+bhaanta(curry),105,7.1,2.1,8.4,0,lunch
+bhaanta(fried),43,4.6,1.5,2.1,3,lunch
+niuro,34,6,4.6,0.1,1,lunch
+rajma,134,22.8,8.7,0.5,6.4,lunch
+ghiraula,56,14,0.3,0.7,2.9,lunch
+chamasur,39,5.5,2.6,0.7,1.1,lunch
+mushroom,50,5.5,1.3,2.7,0.4,lunch
+bhindi,77,12,3.2,1.7,0,lunch
+mula,16,3.4,0.9,0,1.72,lunch
+pumpkin,20,4.9,0.7,0.1,1.1,lunch
+chichinda,58,11.8,2.4,0,1.18,lunch
+pindalu,141,29.5,0.8,0.1,0,lunch
+gaava,112,26,1.5,0.2,4.1,lunch
+broccoli(cooked),35,7.2,2.4,0.4,3.3,lunch
+broccoli(steamed),34,4.6,2.3,0,2.3,lunch
+carrot,41,9.6,0.9,0.2,2.8,snack
+gaanthye mula,25,5,1,0,3,lunch
+cucumber,15,3.6,0.7,0.1,0.5,lunch
+tarul,118,28,1.3,0,4,snack
+halva(carrot),354,44,4.7,18.8,0,lunch
+capsicum,25,4,2,0.2,0,lunch
+spinach,23,3.6,2.9,0.4,2.2,lunch
+chamasur ko saag,38,5.5,2.6,0.7,1.1,lunch
+bethe ko saag,23,4.9,2.7,0.7,2.3,lunch
+palungo ko saag,43,9.6,1.6,0.2,2.8,lunch
+iskush ko saag,23,3.9,2,0.2,1.7,lunch
+keraau ko munto,35,7.1,2.4,0,2.4,lunch
+phaapar ko saag,120,24,6,1.9,6.8,lunch
+raayo ko saag,27,4.7,2.9,0.2,3.2,lunch
+coconut water,38,9,0.1,0,0.2,snack
+coconut milk,169,1.5,1.2,0.3,0,breakfast
+coconut,159,28.4,0,0.7,0.3,snack
+salgam ko saag,42,8.4,3.6,0.1,3.6,lunch
+sisnu,37,6.8,2.7,0.6,2.4,lunch
+tori ko saag,27,4.7,2.9,0.5,3.2,lunch
+kwati,110,20,7,10,6,lunch
+pulao,250,50,10,2.6,20,lunch
+khir,118,19.4,3.5,2.6,0.9,snack
+milk(regular glass),77,7.9,5.8,9,0,lunch
+dahi,88,18.6,2.6,0.4,0,lunch
+ghee,135,0,0,15,0,lunch
+honey,304,84.2,0.3,0,0.2,breakfast
+rolled oats,379,67.7,13.2,6.5,10.1,snack
+tea with sugar,40,7,1,1,0,breakfast
+chicken,166,0,31.8,3.5,0,lunch
+chicken breast with skin,125,1,23.8,3.1,0,lunch
+chicken breast without skin(boiled),151,0,29,3,0,lunch
+chicken(gravy),79,5.4,1.9,5.7,0.4,lunch
+chicken broth,7,0.4,1,0.1,0.4,lunch
+chicken(fried),291,10.6,20.3,18,1.4,lunch
+chicken fried rice,132,21.1,5.3,2.6,0.9,snack
+fried rice,161,31,4.7,2,1.1,snack
+fried rice(pork),182,18.2,12.1,6.7,0.65,snack
+fried rice(egg),144,24,3.4,3.5,1.52,snack
+fried rice(buff),151,18.2,13.3,2.8,0.65,snack
+fried rice(veg),110,18,1.9,3.2,0,snack
+mutton,286,5,14,23,2.5,lunch
+mutton(curry),130,1.6,12,5.9,0.4,lunch
+mutton(soup),163,12.9,11.6,7.2,2.44,lunch
+briyani(mutton),141,19.3,5.8,4.3,0.9,snack
+briyani(chicken),220,30,8,8,3,snack
+briyani(lamb),176,20.5,9.5,5.8,1.3,snack
+lamb,225,0,17,17,1.9,lunch
+buff,250,0,26,15,0,lunch
+pork,163,0.4,23.3,7.6,0,lunch
+peanut butter,599,16,25,47,6,snack
+fish(fried),250,11,10,15,0.5,lunch
+fish(steam),70,1,14,1.2,0,lunch
+sandwich,271,24.4,10.8,13.9,0.8,snack
+fish(soup),72,5.6,7.4,2.2,0,lunch
+strawberry,29,5.1,1,0,2,breakfast
+strawberry shake,113,18.9,3.4,2.8,0.3,snack
+almonds,630,7,21,55.7,7.33,snack
+chia seed,500,43.3,16.7,30,33.3,snack
+walnut,610,13,15,57,0,snack
+bread(white),244,43.9,10.7,3.2,9.2,snack
+bread(brown),257,21.4,21.4,12.9,12.9,snack
+cheese,483,46.7,6.7,26.7,3.3,lunch
+dark chocolate,598,45.9,7.8,42.6,10.9,snack
+barley(jau),361,78.3,10.3,1.8,7.1,lunch
+uinoa(junelo),361,64.2,14,6,7,lunch
+kidney beans,134,22.8,8.7,0.5,6.4,lunch
+whey powder,350,6.3,78.1,1.6,3.1,breakfast
+turkey(fried),304,0,23,23,0,lunch
+popcorn,570,77.6,12.9,25.3,0,snack
+turkey(breast),163,0,30.9,3.4,0,lunch
+turkey(gravy),51,5.1,2.6,2.1,0.4,lunch
+turkey(soup),57,6,4.3,1.9,0,lunch
+pineapple,50,13.1,0.5,0.1,1.4,breakfast
+pasta,355,72,13,1.7,1.7,snack
+tomato soup,72,16,1.6,0,0.8,snack
+sushi rolls,158,29.9,4.2,1.9,2.2,snack
+roti,446,64.8,21.2,15.2,7.2,lunch
+paratha,323,43.3,8.1,14.4,0,snack
+potato soup,647,6.6,1,1.8,1,lunch
+potato salad,170,20,1.5,9.3,1.3,snack
+sneaker,517,59.4,9.4,25.6,0,snack
+ginger shoots,35,8.3,0.7,0.3,0.8,breakfast
+horlicks,382,78.6,9.6,3.2,4.4,breakfast
+boost,80,6.8,6.8,3,1.27,breakfast
+hemp(bhango),607,7.1,35.7,49.3,3.57,snack
+brinjal,25,5.9,0.9,0.2,3,lunch
+bell peppers,31,6,1.3,0.3,2.1,lunch
+brussels sprouts,43,9,3.4,0.3,3.8,lunch
+zucchini,17,3.1,1.2,0.3,1,lunch
+asparagus,20,3.7,2.2,0.2,2.1,lunch
+kale,49,9,4.3,0.9,2,lunch
+beets,43,9.6,1.6,0.2,2.8,lunch
+radish,16,3.4,0.7,0.1,1.6,lunch
+onion,40,9.3,1.1,0.1,1.7,lunch
+salmon(steam),152,0.8,16,9.6,0,lunch
+salmon,247,0,19.4,18.8,0,lunch
+shrimps,102,0,24,0.7,0,lunch
+tuna,207,0,28.3,10.4,0,lunch
+prawn,75,0.1,16.7,0.8,0,lunch
+trout fish,185,0,20.4,10.6,0,lunch
+crab,102,0,20.2,1.8,0,lunch
+diet coke,0,0.1,0,0,0,snack
+lime,47,10.5,0.7,0.2,2.8,breakfast
+raisin,259,51.9,7.4,1.9,3.7,snack
+lentil sprouts,106,22.1,9,0.6,7,lunch
+pumpkin leaves(raw),19,2.3,3.2,0.4,0,snack
+dried litchis,277,70.7,3.8,1.2,4.6,snack
+lahare app(passion fruit),50,7.4,2.2,0.7,15.9,snack
+katus(chestnut),200,46.7,3.3,0,10,snack
+anjir(fig),74,19.2,0.8,0.3,2.9,snack
+amala,125,26.9,1.1,1.6,2.1,snack
+blueberry,250,32.1,3.6,14.3,3.6,snack
+jaifal(nutmeg),525,28.4,5.8,36.3,0,snack
+appricot,48,11.1,1.4,0.4,2,snack
+ground apple,52,14,0.3,0.2,2.4,snack
+pomegrante juice,54,13.1,0.2,0.3,0.1,breakfast
+sharifa,94,24,0,0.3,4.4,snack
+dragon fruit,264,82.1,3.6,0,1.8,snack
+olive,578,0,0,66,0,snack
+kaju(cashew),485,63.6,6.1,24.2,0,snack
+okhar(walnut),610,13,15,57,0,snack
+bamboo shoots(raw),27,5.2,2.6,0.3,2.2,snack
+bamboo shoots(cooked),16,1.9,1.5,0.2,1,lunch
+papad,300,65,20,0,10,snack
+onion rings fried,407,38.2,5.3,26.7,1.3,snack
+aarubukhada(plum),46,11.4,0.7,0.3,1.4,snack
+pumpkin leaves(cooked),21,3.4,2.7,0.2,2.7,lunch
+potato fry,35,6.1,0.3,1,0,snack
+lamb liver(fried),237,0,30.1,12.9,0,lunch
+chicken liver(fried),400,33,19,25,1,lunch
+chicken liver(cooked),167,1.7,20.7,9.7,0.7,lunch
+chicken gizzaard(fried),360,21,20,22,0,lunch
+chicken gizzaed(soup),151,13,16.5,3.1,2.29,lunch
+kodo ko dhido,383,84.2,7.8,1.3,0,dinner
+bamboo shoots(cooked),16,1.9,1.5,0.2,1,dinner
+daal,134,24.8,6.4,1,2.53,dinner
+White Rice ,331,76,7,0.2,2,dinner
+Basmati Rice,359,76.7,9.2,1,0.5,dinner
+chana daal,380,60,22,6,18,dinner
+moong dal,480,88,32,2,23.94,dinner
+masoor dal,129,14.3,7.1,0,4.3,dinner
+fapar ko dhido,92,19.9,3.4,0.6,2.7,dinner
+soybeans,446,30,36,20,9,dinner
+cauliflower(mash),95,12.7,2.1,4.7,1.6,dinner
+cauliflower(with potato),133,11.3,2.1,9.2,1.41,dinner
+cauliflower(boiled),23,4.1,1.8,0.5,2.3,dinner
+dhido,237,44,8.4,3.4,3,dinner
+gundruk,322,38,39,2,0,dinner
+onion,40,9.3,1.1,0.1,1.7,dinner
+salmon(steam),152,0.8,16,9.6,0,dinner
+salmon,247,0,19.4,18.8,0,dinner
+shrimps,102,0,24,0.7,0,dinner
+tuna,207,0,28.3,10.4,0,dinner
+prawn,75,0.1,16.7,0.8,0,dinner
+trout fish,185,0,20.4,10.6,0,dinner
+crab,102,0,20.2,1.8,0,dinner
+lentil sprouts,106,22.1,9,0.6,7,dinner
+pumpkin leaves(cooked),21,3.4,2.7,0.2,2.7,dinner
+chicken gizzaed(soup),151,13,16.5,3.1,2.29,dinner
+lamb liver(fried),237,0,30.1,12.9,0,dinner
+chicken liver(fried),400,33,19,25,1,dinner
+bakula,341,63.4,19.5,1.2,14.6,dinner
+bakula(dried),245,32.5,26.1,2.1,0,dinner
+bodi,96,13.8,7.5,0.8,3.23,dinner
+chana(curry),183,21.8,9.6,7.5,0,dinner
+lauka(curry),28,4.6,0.8,1.2,1.36,dinner
+bhaanta(curry),105,7.1,2.1,8.4,0,dinner
+bhaanta(fried),43,4.6,1.5,2.1,3,dinner
+niuro,34,6,4.6,0.1,1,dinner
+rajma,134,22.8,8.7,0.5,6.4,dinner
+ghiraula,56,14,0.3,0.7,2.9,dinner
+chamasur,39,5.5,2.6,0.7,1.1,dinner
+mushroom,50,5.5,1.3,2.7,0.4,dinner
+bhindi,77,12,3.2,1.7,0,dinner
+mula,16,3.4,0.9,0,1.72,dinner
+pumpkin,20,4.9,0.7,0.1,1.1,dinner
+chichinda,58,11.8,2.4,0,1.18,dinner
+pindalu,141,29.5,0.8,0.1,0,dinner
+gaava,112,26,1.5,0.2,4.1,dinner
+broccoli(cooked),35,7.2,2.4,0.4,3.3,dinner
+broccoli(steamed),34,4.6,2.3,0,2.3,dinner
+gaanthye mula,25,5,1,0,3,dinner
+cucumber,15,3.6,0.7,0.1,0.5,dinner
+pea(curry),92,13,2.9,3.8,0,dinner
+halva(carrot),354,44,4.7,18.8,0,dinner
+capsicum,25,4,2,0.2,0,dinner
+spinach,23,3.6,2.9,0.4,2.2,dinner
+chamasur ko saag,38,5.5,2.6,0.7,1.1,dinner
+bethe ko saag,23,4.9,2.7,0.7,2.3,dinner
+palungo ko saag,43,9.6,1.6,0.2,2.8,dinner
+iskush ko saag,23,3.9,2,0.2,1.7,dinner
+keraau ko munto,35,7.1,2.4,0,2.4,dinner
+phaapar ko saag,120,24,6,1.9,6.8,dinner
+raayo ko saag,27,4.7,2.9,0.2,3.2,dinner
+salgam ko saag,42,8.4,3.6,0.1,3.6,dinner
+sisnu,37,6.8,2.7,0.6,2.4,dinner
+tori ko saag,27,4.7,2.9,0.5,3.2,dinner
+kwati,110,20,7,10,6,dinner
+pulao,250,50,10,2.6,20,dinner
+chicken,166,0,31.8,3.5,0,dinner
+chicken breast with skin,125,1,23.8,3.1,0,dinner
+chicken breast without skin(boiled),151,0,29,3,0,dinner
+chicken(gravy),79,5.4,1.9,5.7,0.4,dinner
+chicken broth,7,0.4,1,0.1,0.4,dinner
+chicken(fried),291,10.6,20.3,18,1.4,dinner
+mutton,286,5,14,23,2.5,dinner
+mutton(curry),130,1.6,12,5.9,0.4,dinner
+mutton(soup),163,12.9,11.6,7.2,2.44,dinner
+chicken liver(cooked),167,1.7,20.7,9.7,0.7,dinner
+lamb,225,0,17,17,1.9,dinner
+buff,250,0,26,15,0,dinner
+pork,163,0.4,23.3,7.6,0,dinner
+khichadi,365,68.9,13.3,3.3,8.9,dinner
+fish(fried),250,11,10,15,0.5,dinner
+fish(steam),70,1,14,1.2,0,dinner
+beans,341,63.6,20.4,1.1,15.9,dinner
+fish(soup),72,5.6,7.4,2.2,0,dinner
+barley(jau),361,78.3,10.3,1.8,7.1,dinner
+uinoa(junelo),361,64.2,14,6,7,dinner
+kidney beans,134,22.8,8.7,0.5,6.4,dinner
+chicken liver(cooked),167,1.7,20.7,9.7,0.7,dinner
+turkey(fried),304,0,23,23,0,dinner
+chicken liver(cooked),167,1.7,20.7,9.7,0.7,dinner
+turkey(breast),163,0,30.9,3.4,0,dinner
+turkey(gravy),51,5.1,2.6,2.1,0.4,dinner
+turkey(soup),57,6,4.3,1.9,0,dinner
+roti,446,64.8,21.2,15.2,7.2,dinner
+chicken gizzaard(fried),360,21,20,22,0,dinner
+potato soup,647,6.6,1,1.8,1,dinner
+brinjal,25,5.9,0.9,0.2,3,dinner
+bell peppers,31,6,1.3,0.3,2.1,dinner
+brussels sprouts,43,9,3.4,0.3,3.8,dinner
+zucchini,17,3.1,1.2,0.3,1,dinner
+asparagus,20,3.7,2.2,0.2,2.1,dinner
+kale,49,9,4.3,0.9,2,dinner
+beets,43,9.6,1.6,0.2,2.8,dinner
+radish,16,3.4,0.7,0.1,1.6,dinner

@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Recommendations</title>
+    <style>
+      body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+      }
+
+      .container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 20px;
+        max-width: 800px;
+        margin: 0 auto;
+        margin-top: 100px;
+      }
+
+      .food-card {
+        width: 200px;
+        padding: 10px;
+        background-color: #f5f5f5;
+        border-radius: 5px;
+        text-align: center;
+        
+      
+      }
+
+      .food-card img {
+        width: 100%;
+        height: 150px;
+        object-fit: cover;
+        border-radius: 5px;
+      }
+
+      .food-card h3 {
+        margin-top: 10px;
+        font-size: 16px;
+      }
+
+      .food-card p {
+        margin-top: 5px;
+        font-size: 14px;
+      }
+      p.calorie{
+        color: rgb(14, 239, 14);
+        font-weight: bold;
+        
+      }
+      header {
+    text-align: center;
+    padding: 20px;
+    background-color: #f5f5f5;
+    width: 100%;
+  }
+
+      @media screen and (max-width: 768px) {
+        .container {
+          max-width: 500px;
+        }
+
+        .food-card {
+          width: 150px;
+        }
+
+        .food-card img {
+          height: 120px;
+        }
+
+        .food-card h3 {
+          font-size: 14px;
+        }
+
+        .food-card p {
+          font-size: 12px;
+        }
+       
+      }
+    </style>
+  </head>
+  <body>
+   
+  
+    <div class="container">
+      {% for meal in suggested_meals %}
+      <div class="food-card">
+        <img src="{{ meal.image }}" alt="{{ meal.meal }}" />
+        <h3>{{ meal.meal }}</h3>
+        <p class = "calorie">Calories: {{ meal.calorie }}</p>
+        <p>Carbohydrates: {{ meal.carbohydrates }}</p>
+        <p>Protein: {{ meal.protein }}</p>
+        <p>Fat: {{ meal.fat }}</p>
+        <p>Fiber: {{ meal.fiber }}</p>
+      </div>
+      {% endfor %}
+    </div>
+  </body>
+</html>

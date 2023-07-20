@@ -5,10 +5,10 @@ const form = document.getElementById('formValue');
 form.addEventListener("submit", function(event) {
   event.preventDefault();
 
-  const quantitySelect = document.querySelector('select[name="quantity"]');
+  const quantitySelect = document.querySelector('#meal_frequency_id');
   const mealQuantity = parseInt(quantitySelect.value);
 
-  const calorieInput = document.querySelector('input[name="quantity"]');
+  const calorieInput = document.querySelector('input[name="calorie_intake"]');
   const calorieCount = calorieInput.value;
 
   resultDiv.innerHTML = ""; // Clear previous results
