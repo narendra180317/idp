@@ -2,36 +2,89 @@
 <html>
 <head>
     <title>Meal Recommendations</title>
+    <style>
+        /* Add your CSS styling here */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f7f7f7;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        .meal {
+            margin-bottom: 20px;
+            padding: 10px;
+            border: 1px solid #ddd;
+            background-color: #fff;
+            border-radius: 5px;
+        }
+
+        .food {
+            margin-bottom: 10px;
+            padding: 10px;
+            border: 1px solid #eee;
+            border-radius: 5px;
+            display: flex;
+            align-items: center;
+        }
+
+        .food img {
+            max-width: 100px;
+            max-height: 100px;
+            margin-right: 10px;
+        }
+
+        h1 {
+            text-align: center;
+        }
+
+        h2 {
+            margin-top: 0;
+        }
+
+        p {
+            margin: 0;
+        }
+    </style>
 </head>
 <body>
-    <h1>Recommended Meal Plan</h1>
-    <p>Total calories: {{ total_calories }}</p>
-    <p>Calorie difference: {{ calorie_difference }}</p>
+    <div class="container">
+        <h1>Recommended Meal Plan</h1>
+        <p>Total calories: {{ total_calories }}</p>
+        <p>Calorie difference: {{ calorie_difference }}</p>
 
-    {% if meal_recommendations %}
         {% for meal_type, foods in meal_recommendations.items %}
-            <h2>{{ meal_type|title }} meal:</h2>
-            {% if foods %}
-            {{foods}}
-                <ul>
-                    {% for food in foods %}
-                        <li>
-                            <h3>{{ suggested_meals.foodName }}</h3>
-                            <p>Calories: {{ suggested_meals.Calories_Kcal }}</p>
-                            <p>Carbohydrates: {{ suggested_meals.carbohydrate_g }}g</p>
-                            <p>Protein: {{ food.protein_g }}g</p>
-                            <p>Fat: {{ food.fat_g }}g</p>
-                            <p>Fiber: {{ food.fiber_g }}g</p>
-                            <img src="{{ food.image.url }}" alt="{{ food.foodName }}" width="100" height="100">
-                        </li>
+            <div class="meal">
+                <h2>{{ meal_type }} Meal</h2>
+                {% if foods %}
+                    {% for food_item in foods %}
+                        {% for meal_detail in suggested_meals %}
+                            {% if food_item in meal_detail.meal %}
+                                <div class="food">
+                                    {% for food in meal_detail.foods %}
+                                        <div>
+                                            <h3>{{ food.foodName }}</h3>
+                                            <p>Calories: {{ food.calories }}</p>
+                                            <p>Carbohydrates: {{ food.carbohydrates }} g</p>
+                                            <p>Protein: {{ food.protein }} g</p>
+                                            <p>Fat: {{ food.fat }} g</p>
+                                            <p>Fiber: {{ food.fiber }} g</p>
+                                        </div>
+                                        <img src="{{ food.image }}" alt="{{ food.foodName }}">
+                                    {% endfor %}
+                                </div>
+                            {% endif %}
+                        {% endfor %}
                     {% endfor %}
-                </ul>
-            {% else %}
-                <p>No food items found for {{ meal_type }} meal.</p>
-            {% endif %}
+                {% else %}
+                    <p>No food items found for {{ meal_type }} meal.</p>
+                {% endif %}
+            </div>
         {% endfor %}
-    {% else %}
-        <p>No meal recommendations available.</p>
-    {% endif %}
+    </div>
 </body>
 </html>
