@@ -206,18 +206,19 @@ def generate_recommendation(request):
 
         # Prepare the data for rendering in the template
         suggested_meals = []
+
         for meal_items in meal_plan:
             # Calculate the average rating for the meal items
             avg_rating = sum([algo.predict('user', meal_item).est for meal_item in meal_items]) / len(meal_items)
 
             # Create a dictionary with the meal details
             meal_details = []
-            # for meal_item in meal_items:
-            try:
-                    food = Food_Details.objects.get(foodName=meal_items)
+            for meal_item in meal_items:
+                 try:
+                    food = Food_Details.objects.get(foodName=meal_item)
                     meal_detail = {
                         'foodName': food.foodName,
-                        'calories': calories_info[meal_items],
+                        'calories': calories_info[meal_item],
                         'rating': avg_rating,
                         'carbohydrates': food.carbohydrate_g,
                         'protein': food.protein_g,
@@ -226,7 +227,7 @@ def generate_recommendation(request):
                         'image': food.image.url
                     }
                     meal_details.append(meal_detail)
-            except Food_Details.DoesNotExist:
+                 except Food_Details.DoesNotExist:
                     # Handle if food item does not exist in the database
                     pass
 
@@ -235,6 +236,7 @@ def generate_recommendation(request):
                 'calorie': sum([calories_info[meal_item] for meal_item in meal_items]),
                 'foods': meal_details
             })
+        #print(suggested_meals)
 
         # Calculate the total calorie count for the meal plan
         total_calories = sum([sum([calories_info[meal_item] for meal_item in meal_items]) for meal_items in meal_plan])
@@ -244,6 +246,7 @@ def generate_recommendation(request):
 
         # Pass the suggestions and other data to the template for rendering
         meal_recommendations = {meal_type: foods for meal_type, foods in zip(meal_order, meal_plan)}
+        print(meal_recommendations.items)
 
         context = {
             'calorie_intake': calorie_intake,
@@ -257,7 +260,7 @@ def generate_recommendation(request):
         # print(meal_frequency)
         # print(total_calories)
         #print(meal_recommendations)
-        print(meal_recommendations.items)
+       
 
 
         return render(request, 'predict.html', context)
